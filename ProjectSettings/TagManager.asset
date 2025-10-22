@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bot
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -83,4 +84,7 @@ TagManager:
     locked: 0
   - name: 14
     uniqueID: 4036103603
+    locked: 0
+  - name: ' 15'
+    uniqueID: 4287392913
     locked: 0
