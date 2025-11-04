@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public partial class Bullet : MonoBehaviour
 {
     private CircleCollider2D collider;
     [SerializeField] private float speed = 5f;
