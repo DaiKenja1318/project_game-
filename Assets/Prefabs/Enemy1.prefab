@@ -337,10 +337,10 @@ GameObject:
   - component: {fileID: 8539500083189840928}
   - component: {fileID: 1810659514338238932}
   - component: {fileID: 4163881131525928106}
-  - component: {fileID: 3377012539313086135}
   - component: {fileID: 5855571835009258934}
-  - component: {fileID: 453111937129912389}
-  - component: {fileID: 371097442544886483}
+  - component: {fileID: 3377012539313086135}
+  - component: {fileID: 3897254838027865574}
+  - component: {fileID: 6566151363547964436}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -447,6 +447,34 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &5855571835009258934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6067056881933417648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
 --- !u!70 &3377012539313086135
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -482,49 +510,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
---- !u!114 &5855571835009258934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6067056881933417648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  drawGizmos: 1
-  detailedGizmos: 0
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  graphMask:
-    value: -1
---- !u!114 &453111937129912389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6067056881933417648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b421e3b7b64949345bc704a823332a3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: {fileID: 3060057578612762168}
-  controller: {fileID: 0}
---- !u!114 &371097442544886483
+--- !u!114 &3897254838027865574
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -551,7 +537,7 @@ MonoBehaviour:
   followEnabled: 1
   jumpEnabled: 1
   directionLookEnabled: 1
-  damping: 1
+  damping: 0.01
   POOL_SIZE: 10
   bulletPrefab: {fileID: 8626482093536241438, guid: 22bbc92a06017c942862909c7812a6b5, type: 3}
   firePointTransform: {fileID: 1852304390538210628}
@@ -561,6 +547,20 @@ MonoBehaviour:
   armPoint: {fileID: 1852304390538210628}
   rb: {fileID: 0}
   animator: {fileID: 0}
+--- !u!114 &6566151363547964436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6067056881933417648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b421e3b7b64949345bc704a823332a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: {fileID: 3060057578612762168}
+  controller: {fileID: 0}
 --- !u!1 &7781566414116589867
 GameObject:
   m_ObjectHideFlags: 0
